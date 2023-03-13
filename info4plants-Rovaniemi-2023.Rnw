@@ -204,27 +204,26 @@ library(ggspectra)
     \item Eustress and distress.
     \item Stress and strain.
   \end{itemize}
-  Idea: \stressicon\ stress depends on an external force exerting a pressure or limitation.
+  Idea: \stressicon\ stress depends on an external force on the organism.
 \end{frame}
 
-\begin{frame}{\stressicon\ Stress involves a comparison}
+%\begin{frame}{\stressicon\ Stress involves a comparison}
+%  \begin{itemize}
+%    \item Reference = `optimal environment' $\to$ always under stress.
+%    \item Reference = `average environment' $\to$ sometimes under stress.
+%    \item Reference = `another genotype' under the same environment $\to$ E $\times$ G.
+%    \item Function evaluated: fitness $\to$ ecological/evolutionary stress: adaptation vs.\ maladaptation.
+%    \item Function evaluated: biomass or yield $\to$ production/economic stress.
+%  \end{itemize}
+%\end{frame}
+%
+\begin{frame}{\senseicon\ Sensing}
   \begin{itemize}
-    \item Reference = `optimal environment' $\to$ always under stress.
-    \item Reference = `average environment' $\to$ sometimes under stress.
-    \item Reference = `another genotype' under the same environment $\to$ E $\times$ G.
-    \item Function evaluated: fitness $\to$ ecological/evolutionary stress: adaptation vs.\ maladaptation.
-    \item Function evaluated: biomass or yield $\to$ production/economic stress.
+    \item Sensing of the state of the \emph{environment}.
+    \item Sensing of the state of the \emph{organism}.
+    \item Sensing is needed for communication.
   \end{itemize}
-\end{frame}
-
-\begin{frame}{\senseicon\ Sensing: one word and many meanings}
-  \begin{itemize}
-    \item Sensing of the state of environment.
-    \item Sensing of the internal state of an organism.
-    \item Sensing as detrimental to fitness or biomass production.
-    \item Sensing as enhancer of fitness or biomass production.
-  \end{itemize}
-  Idea: \senseicon\ sensing is `exploration' and acquisition of information by an organism.
+  Idea: \senseicon\ sensing is `exploration' by an organism.
 \end{frame}
 
 \begin{frame}{\stressicon\ $\rightleftarrows$ \senseicon\ Stress and sensing are intertwined}
@@ -235,7 +234,7 @@ library(ggspectra)
     \item Sensing can contribute to stress tolerance.
     \item Sensing can contribute to stress enhancement.
   \end{itemize}
-  The outcome of sensing is acclimation, and has been selected through evolution and determines experienced stress.
+  The outcome of sensing is frequently an acclimation response selected during evolution.
 \end{frame}
 
 \section{\infoicon\ Information and \historyicon\ Memory}
@@ -247,7 +246,7 @@ Signal: emission is ``beneficial'' (communication).\\\pause
 \begin{itemize}
   \item Cues and signals carry information.
   \item Once sensed, decoding extracts information.
-  \item Memory is storage of information.
+  \item Memory is storage of information.\\pause
   \item Natural selection stores information.
   \item Epigenetic and other types of regulation store information.
   \item The phenotype stores information.
@@ -259,10 +258,12 @@ Signal: emission is ``beneficial'' (communication).\\\pause
 \begin{frame}
   \frametitle{\futureicon\ Anticipation/forecasting and fitness}
   \begin{itemize}
-    \item Our everyday life depends on forecasting all sorts of events every minute.
-    \item Sometimes we do this consciously, but most of the time we are not aware of what our brain is doing.
-    \item Perception of cues and memories are sources of information.
-    \item e.g.\ estimating the weight of a cup when lifting it.
+    \item Our everyday life depends on forecasting.
+    \item Most of the time we are not aware $\to$ consciousness is not required.
+    \item e.g.\ estimating the weight of a cup when lifting it.\\pause
+    \item Plants' life depends on forecasting.
+    \item e.g.\ winter hardening in perennials.\\pause
+    \item Forecasting relies on \emph{current information} and \emph{memories}.
   \end{itemize}
 \end{frame}
 
@@ -275,13 +276,24 @@ Signal: emission is ``beneficial'' (communication).\\\pause
   \item Cue/signal should precede the predicted event\ldots
   \item \ldots long enough for acclimation to take place.
   \item Correlation can be spatial, temporal or both.
-  \item ``Random noise'' in spatial/temporal cues/signals can be ``smoothed out''.
+  \item ``Noise'' in spatial/temporal cues/signals can be ``smoothed out''.
 \end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{\futureicon\ Correlations in the environment}
   \includegraphics[width=\linewidth]{figures/art_examples.pdf}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\futureicon\ Planting density and lateral red:far-red ratio}
+  \centering
+  \includegraphics[width=0.66\linewidth]{figures/RFR-density.png}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\futureicon\ Potential evapotranspiration and UV-B irradiance}
+  \includegraphics[width=\linewidth]{figures/PET-UVB-2020-2022.png}
 \end{frame}
 
 %\begin{frame}
@@ -516,7 +528,7 @@ PLANT\\
     \path [lo, dashed] (acclimation) -- (ready);
     \path [lg] (info) edge [bend left=100]  node[midway, above]{\hspace{1em}regulate} (valve1);
     \path [lg] (info) edge [bend left=95]  node[midway, below]{regulate\hspace{8em}} (valve2);\pause
-    
+
     \node [b, below = of genome,yshift=-6em, fill=blue!10] (genome1) {Genome};
     \node [big dot, right = of genome1] (valve11) {};
     \node [b, below = of memory,yshift=-6em] (memory1) {Epigenome};
